@@ -1,0 +1,169 @@
+/* ---------- Estrutura Principal ---------- */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #f0f0f0;
+    padding: 2rem;
+}
+
+.selecionado a{
+    color: #d30f0f;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* ---------- Caixa do Formulário ---------- */
+.login-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 30rem;
+    padding: 2rem;
+    background: linear-gradient(to top, #1a1a1a, #1f1f1f);
+    border-radius: 10px;
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* ---------- Título ---------- */
+.login-titulo {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.login-titulo h1 {
+    font-size: 2rem;
+    color: #f0f0f0;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+}
+
+.login-titulo p {
+    font-size: 1rem;
+    color: #bdbdbd;
+}
+
+/* ---------- Inputs ---------- */
+.campo-input {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    background-color: #f0f0f0;
+    color: #1f1f1f;
+    border: 2px solid #333;
+    border-radius: 5px;
+    margin-top: 0.3rem;
+    transition: 0.3s;
+}
+
+.campo-input::placeholder {
+    color: #4f4f4f;
+}
+
+.campo-input:focus {
+    outline: none;
+    border-color: #d30f0f;
+    box-shadow: 0 0 10px rgba(211, 15, 15, 0.5);
+}
+
+/* ---------- Textarea ---------- */
+textarea {
+    width: 100%;
+    height: 10rem;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    background-color: #f0f0f0;
+    color: #1f1f1f;
+    border: 2px solid #333;
+    border-radius: 5px;
+    resize: none;
+    margin-top: 0.3rem;
+    transition: 0.3s;
+    font-family: inherit;
+}
+
+textarea::placeholder {
+    color: #4f4f4f;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #d30f0f;
+    box-shadow: 0 0 10px rgba(211, 15, 15, 0.5);
+}
+
+/* ---------- Botão Enviar ---------- */
+.entrar {
+    width: 100%;
+    max-width: 30rem;
+}
+
+.btn-submit {
+    display: block;
+    width: 100%;
+    background-color: #d30f0f;
+    color: #f0f0f0;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 0.9rem 1.5rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.btn-submit:hover {
+    transform: scale(1.05);
+    background-color: #f0f0f0;
+    color: #d30f0f;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+}
+
+/* ========== RESPONSIVIDADE ========== */
+
+@media (max-width: 768px) {
+    main {
+        padding: 1rem;
+        min-height: auto;
+    }
+
+    .login-box {
+        margin-top: 2rem;
+        width: 95%;
+        max-width: 100%;
+        padding: 1.5rem;
+    }
+
+    .entrar {
+        width: 95%;
+        max-width: 100%;
+    }
+
+    .login-titulo h1 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-box {
+        padding: 1rem;
+    }
+
+    .login-titulo h1 {
+        font-size: 1.6rem;
+    }
+
+    .login-titulo p {
+        font-size: 0.9rem;
+    }
+
+    textarea {
+        height: 8rem;
+    }
+}

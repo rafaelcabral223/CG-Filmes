@@ -1,0 +1,189 @@
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #f0f0f0;
+}
+
+.login-box{
+    
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 28rem;
+    padding: 30px;
+    background: linear-gradient(to top, #1a1a1a, #1f1f1f);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    margin-top: 10rem;
+}
+
+.login-titulo{
+    text-align: center;
+    margin: 20px 0 40px 0;
+}
+
+.login-titulo h1{
+    color: #f0f0f0;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+}
+
+.input-box{
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.campo-input{
+    width: 100%;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    background-color: #f0f0f0;
+    color: #1f1f1f;
+    border: 2px solid #333;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.campo-input::placeholder{
+    color: #4f4f4f;
+}
+
+.campo-input:focus{
+    outline: none;
+    border-color: #d30f0f;
+    box-shadow: 0 0 10px rgba(211, 15, 15, 0.5);
+}
+
+.esqueceu-senha{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    color: #929292;
+}
+
+.esqueceu-senha section{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.esqueceu-senha a{
+    color: #929292;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.esqueceu-senha a:hover{
+    color: #d30f0f;
+    text-decoration: underline;
+}
+
+#check{
+    width: 16px;
+    height: 16px;
+}
+
+.entrar{
+    position: relative;
+    width: 100%;
+    max-width: 440px;
+    margin-bottom: 1.5rem;
+}
+
+.btn-entrar{
+    display: none;
+}
+
+.entrar .btn-submit {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: #d30f0f;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    transition: 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    color: #f0f0f0;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border: none;
+}
+
+.entrar .btn-submit:hover {
+    transform: scale(1.05);
+    background-color: #f0f0f0;
+    color: #d30f0f;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
+}
+
+.criar-conta{
+    text-align: center;
+    color: #929292;
+}
+
+.criar-conta p{
+    font-size: 0.9rem;
+}
+
+.criar-conta a{
+    color: #f0f0f0;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.criar-conta a:hover{
+    color: #d30f0f;
+    text-decoration: underline;
+}
+
+/* ========== RESPONSIVIDADE ========== */
+
+@media (max-width: 768px) {
+    main {
+        padding: 1rem;
+        min-height: auto;
+    }
+
+    .login-box {
+        margin-top: 4rem;
+        width: 95%;
+        max-width: 100%;
+        padding: 1.5rem;
+    }
+
+    .entrar {
+        width: 95%;
+        max-width: 100%;
+    }
+
+    .login-titulo h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-box {
+        margin-top: 2rem;
+        padding: 1.5rem 1rem;
+    }
+
+    .esqueceu-senha {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .criar-conta p {
+        font-size: 1rem;
+    }
+}

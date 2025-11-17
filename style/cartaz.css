@@ -1,0 +1,192 @@
+.cartaz-main {
+    padding-top: 6rem;
+    min-height: 100vh;
+}
+
+.selecionado a{
+    color: #d30f0f;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.title-page {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    color: #360404;
+    font-size: 2rem;
+    margin: 2rem 2rem 4rem 2rem;
+    background: linear-gradient(to right, #cfcfcf, #dddddd);
+    box-shadow: 0 6px 35px 3px #360404;
+    padding: 2rem;
+    border-radius: 10px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Container principal para os cards */
+.em-cartaz-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
+    padding: 0 2rem;
+    max-width: 1720px;
+    margin: 0 auto;
+}
+
+/* Card de cada filmes */
+
+.filme-card {
+    width: 300px;
+    background: linear-gradient(to top, #1a1a1a, #1f1f1f);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+    color: #f0f0f0;
+    transition: 0.3s;
+    border: 1px solid #333;
+}
+
+.filme-card img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover; 
+    display: block;
+
+}
+
+.filme-card img:hover{
+    filter: brightness(0.75);
+}
+
+.filme-info {
+    padding: 1.5rem;
+    border-bottom: 1px solid #333;
+}
+
+.filme-info h3 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #f0f0f0;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+}
+
+.filme-info p {
+    font-size: 0.9rem;
+    color: #bdbdbd;
+    line-height: 1.4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.filme-horarios {
+    padding: 1.5rem;
+}
+
+.filme-horarios h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #d30f0f;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+}
+
+.filme-horarios ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    padding: 0;
+    margin: 0;
+}
+
+.filme-horarios ul:not(:last-child) {
+    margin-bottom: 1rem; /* Espaço entre "Dublado" e "Legendado" */
+}
+
+/* Botão do horário */
+.btn-horario {
+    display: inline-block;
+    background-color: #f0f0f0;
+    color: #1f1f1f;
+    padding: 0.5rem 0.8rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: 0.3s;
+    border: 2px solid #f0f0f0;
+}
+
+.btn-horario:hover {
+    background-color: #d30f0f;
+    color: #f0f0f0;
+    border-color: #d30f0f;
+    transform: scale(1.05);
+}
+
+
+.btn-horario.horario-indisponivel {
+    background-color: #484747;
+    color: #c1c1c1;
+    border-color: #c1c1c1;
+    cursor: not-allowed;
+    text-decoration: none;
+}
+
+.btn-horario.horario-indisponivel:hover {
+    background-color: #484747;
+    color: #c1c1c1;
+    border-color: #c1c1c1;
+    transform: none;
+}
+
+/* ========== RESPONSIVIDADE ========== */
+
+@media (max-width: 768px) {
+    .cartaz-main {
+        padding-top: 1rem;
+    }
+
+    .title-page {
+        font-size: 1.5rem;
+        padding: 1.5rem;
+        margin: 2.5rem 1rem;
+    }
+
+    .em-cartaz-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5rem;
+        padding: 0 1rem;
+    }
+
+    .filme-card {
+        width: 90%;
+        max-width: 25rem;
+    }
+
+    .filme-card img {
+        height: 400px;
+    }
+
+    .filme-horarios ul {
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .filme-card img {
+        height: 320px;
+    }
+
+    .filme-info h3 {
+        font-size: 1.4rem;
+    }
+
+    .btn-horario {
+        padding: 0.4rem 0.6rem;
+        font-size: 0.8rem;
+    }
+}

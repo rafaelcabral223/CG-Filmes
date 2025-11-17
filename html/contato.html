@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CG Filmes - Contato</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/contato.css">
+    <link rel="icon" href="../imgs/logo.png" type="image/png">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="home.html">
+                <img src="../imgs/logo.png" height="60px" alt="Logo" class="logo">
+            </a>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="cartaz.html">Em Cartaz</a></li>
+                <li><a href="comidas.html">Comidas</a></li>
+                <li class="selecionado"><a href="contato.html">Contato</a></li>
+            </ul>
+            <div class="btn">
+                <a href="login.html">
+                    Login
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="login-box">
+            <div class="login-titulo">
+                <h1>Entrar em contato</h1>
+                <p>Ficou com alguma dúvida ou tem algum feedback? Entre em contato conosco!</p>
+        </div>
+            
+        <form action="">
+            <label for="fnome">Nome completo:</label><br>
+            <input type="text" class="campo-input" placeholder="Nome completo" required><br><br>
+
+            <label for="femail">E-mail:</label><br>
+            <input type="email" class="campo-input" placeholder="E-mail" required><br><br>
+            
+            <label for="fcpf">CPF:</label><br>
+            <input
+                type="text"
+                id="fcpf"
+                name="fcpf"
+                class="campo-input"
+                placeholder="000.000.000-00"
+                maxlength="14"
+                required><br><br>
+
+            <label for="ftel">Telefone:</label><br>
+            <input 
+                type="tel"
+                id="ftel"
+                name="ftel"
+                class="campo-input"
+                placeholder="(00) 00000-0000"
+                maxlength="15"
+                required><br><br>
+            <label for="ftextarea">Escreva sua questão:</label>
+            <textarea name="message" placeholder="Escreva aqui..."></textarea>
+        </form>
+        </div>
+
+        <div class="entrar">
+            <button type="submit" class="btn-submit">Enviar</button>
+        </div>
+    </main>
+  <footer>
+    <div class="container-footer">
+      <div class="area">
+        <h2>Filmes Mais Vistos</h2>
+        <p><a href="cartaz.html">Interestelar</a></p>    
+        <p><a href="cartaz.html">Conclave</a></p>    
+        <p><a href="cartaz.html">O Show de Truman</a></p>   
+        <p><a href="cartaz.html">F1: O Filme</a></p>              
+      </div>
+
+      <div class="area">
+        <h2>CG-Filmes</h2>
+        <p><a href="easteregg.html">Sobre a CG-Filmes</a></p>          
+        <p><a href="login.html">Trabalhe Conosco</a></p>      
+        <p><a href="login.html">Seja Membro</a></p>             
+      </div>      
+
+      <div class="area">
+        <h2>Alimentação</h2>
+        <p><a href="comidas.html">Comidas & Bebidas</a></p> 
+      </div>  
+
+      <div class="area">
+        <h2>Para Empresas</h2>
+        <p><a href="login.html">Reserva de sala</a></p> 
+        <p><a href="login.html">Parceria</a></p>   
+      </div>  
+
+      <div class="area">
+        <h2>Contato</h2>
+        <p><a href="contato.html">Entre em Contato</a></p> 
+        <p><a href="contato.html">FAQ</a></p>         
+      </div>
+    </div> 
+      <div class="footer-final">
+        <p>© 2025 por CG-Filmes. Todos os direitos reservados. Nenhuma parte deste site pode ser reproduzida ou 
+          transmitida de qualquer forma ou por qualquer meio, incluindo fotocópia, gravação ou quaisquer sistemas de armazenamento 
+          recuperação de informação, sem permissão por escrito do autor.</p>
+      </div>
+  </footer>
+    
+</body>
+</html>

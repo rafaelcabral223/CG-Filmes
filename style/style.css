@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1rem;
+    background: linear-gradient(to right, #000000, #0f0f0f);
+}
+
+/* NAV */
+
+.navbar {
+    display: flex;
+    align-items: center;  /* alinha imagem e texto vertical */
+    justify-content: center;
+    background: linear-gradient(to top, #1a1a1a, #1f1f1f);
+    padding: 0.6rem 5rem; /*cima baixo e laterais */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+    position: fixed; /* Deixa o elemento fixo na tela */
+    width: 100%;    /* Ocupa 100% da largura */
+    z-index: 100; /* Garante que o menu fique acima de outros conteúdos */
+}
+
+.logo{
+    transition: 0.3s;
+}
+
+.logo img{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto; /*empurra pro limite*/
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+}
+
+.navbar ul li{
+    margin: 0 4rem;
+    transition: 0.3s;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #f0f0f0;
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
+    white-space: nowrap;
+}
+
+.navbar a:hover{
+    text-decoration: underline 2px;
+}
+
+.navbar ul li:hover{
+    transform: scale(1.05);
+
+}
+
+.logo:hover{
+    transform: scale(1.05);
+}
+
+.btn{
+    transition: 0.3s;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+}
+
+.btn a{
+    background-color: #d30f0f;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    transition: 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.btn a:hover{
+    background-color: #f0f0f0;
+    color: #d30f0f;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
+    text-decoration: none;
+}
+
+  /* FOOTER */
+
+.container-footer{
+    border-top: 1px solid #333;
+    color: #f0f0f0;
+    display: flex;
+    align-items: flex-start; /* alinha as áreas pelo topo */
+    background: linear-gradient(to top, #1a1a1a, #1f1f1f);
+    padding: 0.6rem 5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+    margin-top: 4rem;
+    
+}
+
+.area{
+    margin: 2rem auto;
+}
+
+.area h2{
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    text-transform: uppercase;
+  }
+
+.area p{
+    padding: 0.5rem;
+
+}
+
+.area a{
+    color: #929292;
+    text-decoration: none;
+    transition: 0.3s;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.area a:hover{
+    color: #d30f0f;
+    text-decoration: none;
+}
+
+.footer-final {
+    background-color: #111;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.footer-final p{
+    color: #929292;
+    font-size: 0.8rem
+}
+
+/* ========== RESPONSIVIDADE ========== */
+
+@media (max-width: 900px) {
+    .navbar {
+        padding: 0.6rem 2rem;
+    }
+
+    .navbar ul li {
+        margin: 0 1.5rem;
+    }
+
+    .navbar a {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center; 
+        padding: 0.6rem 1rem;
+        position: static; 
+    }
+
+    main {
+        padding-top: 1rem;
+    }
+
+    .navbar a {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0.5rem;
+    }
+    
+    .banner {
+        margin-top: 0;
+    }
+
+    .navbar ul {
+        flex-direction: row; 
+        flex-wrap: wrap; 
+        justify-content: center;
+        margin: 0.5rem 0;
+        padding-left: 0;
+    }
+
+    .navbar ul li {
+        margin: 0.2rem 0.5rem;
+    }
+
+    .navbar .btn {
+        margin-top: 0;
+        margin-left: 0.5rem;
+    }
+
+    .container-footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .area {
+        margin: 1rem auto;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar .btn {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+        margin-left: 0;
+    }
+
+    .navbar .btn a {
+        width: 90%;
+        text-align: center;
+        justify-content: center;
+    }
+}

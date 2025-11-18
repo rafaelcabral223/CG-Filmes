@@ -2,7 +2,7 @@
 Criamos um site com o objetivo de simular uma experiência de acesso a um cinema online. O projeto envolveu planejamento, design, programação e organização de conteúdo.
 
 ## Home
-![Print da página principal](image.png)
+![Print da página principal](/img/readme/image.png)
 Nessa página, o usuário tem acesso a alguns filmes em cartaz e aos principais combos.
 
 ## Em Cartaz
@@ -19,4 +19,5 @@ Nessa página...
 
 ## Login
 ![Print da página "Login"](image-4.png)
+
 Nessa página...

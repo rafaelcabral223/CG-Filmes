@@ -1,6 +1,9 @@
 # 🎬 CG Filmes
 
 Bem-vindo ao repositório do **CG Filmes**! Este projeto é uma simulação completa de um website de cinema (Front-end), desenvolvido com foco em design responsivo, organização estrutural e experiência do usuário.
+<br>
+<br>
+*Link do site: https://cgfilmes.netlify.app/html/home*
 
 ---
 
@@ -81,5 +84,6 @@ O projeto segue uma identidade visual forte e coesa:
     ```
 2.  Navegue até a pasta do projeto.
 3.  Abra o ficheiro `html/home.html` no seu navegador.
+
 
 
